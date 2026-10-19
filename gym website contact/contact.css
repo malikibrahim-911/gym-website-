@@ -1,0 +1,38 @@
+/* FitZone — CONTACT PAGE ONLY (Contact details + form) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, Helvetica, sans-serif; background: #101010; color: #fff; min-height: 100vh; }
+header.navbar { width: 100%; min-height: 82px; padding: 18px 6%; display: flex; justify-content: space-between; align-items: center; gap: 22px; flex-wrap: wrap; background: #080808; border-bottom: 1px solid #222; }
+header.navbar .logo { color: #fff; font-size: 29px; font-weight: 800; text-decoration: none; white-space: nowrap; }
+header.navbar .logo span { color: #39ff14; }
+header.navbar nav { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+header.navbar nav a { color: #fff; text-decoration: none; font-size: 15px; transition: color .25s ease; }
+header.navbar nav a:hover, header.navbar nav a.active { color: #39ff14; }
+.contact-container { width: 92%; max-width: 1100px; margin: 42px auto; background: #090909; border: 1px solid #252525; }
+.contact-heading { text-align: center; padding: 28px 15px; background: #151515; border-bottom: 2px solid #39ff14; }
+.contact-heading h1 { font-size: 30px; margin-bottom: 10px; letter-spacing: 1px; }
+.contact-heading p { color: #39ff14; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+.contact-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; padding: 28px; }
+.contact-info, .contact-form { min-width: 0; padding: 15px; }
+.contact-info h2, .contact-form h2 { color: #fff; font-size: 23px; margin-bottom: 22px; }
+.contact-info h2 { padding-bottom: 12px; border-bottom: 2px solid #39ff14; }
+.info-item { margin-bottom: 28px; }
+.info-item h3 { color: #39ff14; font-size: 16px; margin-bottom: 9px; }
+.info-item p { color: #ddd; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.contact-form form { display: flex; flex-direction: column; gap: 12px; }
+.contact-form input, .contact-form textarea { display: block; width: 100%; padding: 13px 14px; background: #f5f5f5; color: #111; border: 1px solid #444; border-radius: 3px; font: 14px Arial, sans-serif; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #39ff14; border-color: #39ff14; }
+.contact-form textarea { resize: vertical; min-height: 110px; }
+.contact-form button { width: 100%; padding: 14px; background: #39ff14; color: #050505; border: 2px solid #39ff14; border-radius: 3px; font-size: 14px; font-weight: 700; cursor: pointer; transition: .25s ease; }
+.contact-form button:hover { background: transparent; color: #39ff14; }
+.contact-footer { padding: 22px 12px; text-align: center; background: #151515; border-top: 1px solid #39ff14; color: #ccc; font-size: 12px; line-height: 2; }
+.footer-brand { color: #39ff14; font-weight: 700; margin-bottom: 5px; }
+@media (max-width: 700px) {
+  header.navbar { justify-content: center; padding: 20px 5%; }
+  header.navbar nav { justify-content: center; gap: 18px; }
+  .contact-container { width: 94%; margin: 25px auto; }
+  .contact-heading h1 { font-size: 25px; }
+  .contact-content { grid-template-columns: 1fr; gap: 12px; padding: 15px; }
+  .contact-info, .contact-form { padding: 10px 5px; }
+  .contact-info h2, .contact-form h2 { font-size: 21px; }
+}
