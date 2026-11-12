@@ -1,0 +1,187 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Navbar */
+.header {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #00ff4c;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ff4c;
+}
+
+/* Programs Section */
+.programs {
+    min-height: 100vh;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #0d0d0e, #121213, #080808);
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #00ff4c;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Main Heading */
+.main-heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 50px;
+}
+
+.main-heading span {
+    color: #00ff4c;
+}
+
+/* Cards Layout */
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Individual Card */
+.card {
+    padding: 40px 30px;
+    min-height: 290px;
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff4c;
+    box-shadow: 0 10px 30px rgba(0, 255, 76, 0.12);
+}
+
+/* Card Heading */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Card Paragraph */
+.card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* Learn More Link */
+.card a {
+    display: inline-block;
+    color: #00ff4c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    color: white;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+    .program-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-heading {
+        font-size: 50px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .programs {
+        padding: 45px 20px;
+    }
+
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 30px 25px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+}
